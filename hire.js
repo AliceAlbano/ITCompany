@@ -1,13 +1,13 @@
 var developperCost = 5;
 
 function hireDevelopper() {
-    if (prospectRessources < developperCost) {
+    if (prospectRessources.number < developperCost) {
         return;
     }
     developperNumber++;
     var span = document.getElementById("developper-number");
     span.textContent = developperNumber;
-    addProspectRessource(-developperCost);
+    prospectRessources.add(-developperCost);
 }
 
 function setHireDevelopperButtonText(text) {
