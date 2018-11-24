@@ -2,7 +2,7 @@ var developperCost = 5;
 
 function hireDevelopper() {
     if (prospectRessources < developperCost) {
-        return
+        return;
     }
     developperNumber++;
     var span = document.getElementById("developper-number");
