@@ -1,10 +1,10 @@
 var developperNumber = 0;
 
 function produceCode() {
-    codeLines += developperNumber;
+    codeLines += developperNumber * delayMS / 1000;
     updateCodeLinesContent();
 }
 
 window.setInterval(function() {
     produceCode();
-}, 1000);
+}, delayMS);
