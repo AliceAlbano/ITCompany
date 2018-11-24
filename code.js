@@ -1,20 +1,14 @@
-var codeLines = 0;
+var codeLines = new Resource("code-lines-value");
 var featureSize = 100;
 var featurePrice = 100;
 
 function sellFeature() {
-    if (codeLines < featureSize) {
+    if (codeLines.number < featureSize) {
         return;
     }
     money += featurePrice;
     var span = document.getElementById("money-value");
     span.textContent = money;
 
-    codeLines -= featureSize;
-    updateCodeLinesContent();
-}
-
-function updateCodeLinesContent() {
-    var span = document.getElementById("code-lines-value");
-    span.textContent = Math.floor(codeLines);
+    codeLines.add (-featureSize);
 }
