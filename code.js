@@ -6,9 +6,6 @@ function sellFeature() {
     if (codeLines.number < featureSize) {
         return;
     }
-    money += featurePrice;
-    var span = document.getElementById("money-value");
-    span.textContent = money;
-
+    money.add(featurePrice);
     codeLines.add (-featureSize);
 }
