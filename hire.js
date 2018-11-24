@@ -1,4 +1,3 @@
-var developperNumber = 0;
 var developperCost = 5;
 
 function hireDevelopper() {
