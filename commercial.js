@@ -3,5 +3,5 @@ var salesRepresentativeSalary = 120000;
 var eachDay = workedHoursPerDay * hourDurationMS;
 
 window.setInterval(function() {
-    sellFeature();
+    sellFeature(salesRepresentatives.number);
 }, eachDay);
