@@ -4,9 +4,7 @@ function hireDevelopper() {
     if (prospectRessources.number < developperCost) {
         return;
     }
-    developperNumber++;
-    var span = document.getElementById("developper-number");
-    span.textContent = developperNumber;
+    developpers.add(1);
     prospectRessources.add(-developperCost);
 }
 

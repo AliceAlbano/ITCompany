@@ -1,7 +1,7 @@
-var developperNumber = 0;
+var developpers = new Resource("developper-number");
 
 function produceCode() {
-    codeLines += developperNumber * delayMS / 1000;
+    codeLines += developpers.number * delayMS / 1000;
     updateCodeLinesContent();
 }
 
