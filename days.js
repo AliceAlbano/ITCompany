@@ -9,6 +9,6 @@ window.setInterval(function() {
 }, hourDurationMS * workedHoursPerDay);
 
 function payWages() {
-    money.add(-developpers.number * developperSalary / (workedDaysPerMonth * 12));
+    money.add(-developpers.getDailyCost());
     money.add(-salesRepresentatives.number * salesRepresentativeSalary / (workedDaysPerMonth * 12));
 }
