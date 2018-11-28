@@ -10,5 +10,5 @@ window.setInterval(function() {
 
 function payWages() {
     money.add(-developpers.getDailyCost());
-    money.add(-salesRepresentatives.number * salesRepresentativeSalary / (workedDaysPerMonth * 12));
+    money.add(-salesRepresentatives.getDailyCost());
 }
