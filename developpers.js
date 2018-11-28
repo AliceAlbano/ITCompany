@@ -1,20 +1,15 @@
-class Developpers extends Resource {
+class Developpers extends Employees {
     constructor() {
-        super("developper-number");
-        this.annualSalary = 100000;
+        super("developper-number", 100000);
     }
 
-    produceCode() {
+    workForOneHour() {
         codeLines.add(this.number * delayMS / 1000);
-    }
-
-    getDailyCost() {
-        return this.number * this.annualSalary / (workedDaysPerMonth * 12)
     }
 }
 
 const developpers = new Developpers();
 
 window.setInterval(function() {
-    developpers.produceCode();
+    developpers.workForOneHour();
 }, delayMS);
